@@ -2,6 +2,12 @@
 ## Basic Configuration of Simulation Platform
 See this [document](https://www.yuque.com/xtdrone/manual_en/basic_config) for the basic configuration of simulation platform
 
+And then copy the launch files
+
+```
+cp trial* ~/PX4_Firmware/launch/
+```
+
 ## Trial 1 and 2 Configuration
 This repository contains the Trial 1 and Trial 2 worlds that solutions will be tested in. 
 
@@ -30,11 +36,22 @@ source ~/.bashrc
 
 ## Start the simulation
 
+You can start the simulation in a script.
 
 ```
-roslaunch px4 trial1.launch
+start_trial_1.sh
 ```
 
+or
+
 ```
-bash start_track.sh
+start_trial_2.sh
+```
+
+To finish the simulation, after ctrl+c, you should `killall -9 gzclient` to stop Gazebo.
+
+You can calculate the score by
+
+```
+python score.py
 ```
