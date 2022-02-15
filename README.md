@@ -48,6 +48,8 @@ or
 start_trial_2.sh
 ```
 
+<img src="simulation.png" width="640" height="360" />
+
 To finish the simulation, after ctrl+c, you should `killall -9 gzclient` to stop Gazebo.
 
 You can calculate the score by
@@ -55,3 +57,7 @@ You can calculate the score by
 ```
 python score.py
 ```
+
+You're expected to make sure whether the MPC_HOR_ACC_MAX parameter is 10 by using QGroundControl.
+
+<img src="acc_hov_max.png" width="240" height="360" />
