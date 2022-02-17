@@ -5,7 +5,9 @@ See this [document](https://www.yuque.com/xtdrone/manual_en/basic_config) for th
 And then copy the launch files
 
 ```
-cp trial* ~/PX4_Firmware/launch/
+cp *.launch ~/PX4_Firmware/launch/
+cp trial_1_setup/trial_1.world ~/PX4_Firmware/Tools/sitl_gazebo/worlds/
+cp trial_2_setup/trial_2.world ~/PX4_Firmware/Tools/sitl_gazebo/worlds/
 ```
 
 ## Trial 1 and 2 Configuration
